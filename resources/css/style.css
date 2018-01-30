@@ -1,10 +1,21 @@
 html {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  color: #555;
 }
 
-.container {
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 3.5rem;
+}
 
+h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 1.7rem;
+  line-height: 2rem;
 }
 
 /* Header */
@@ -19,10 +30,10 @@ header {
 }
 
 header .content {
-  display: flex;
-  align-items: center;
   padding: 1rem 1.5rem;
   justify-content: space-between;
+  display: flex;
+  align-items: center;
 }
 
 header .logo-title {
@@ -49,7 +60,7 @@ nav ul {
 }
 
 nav a {
-  color: #000;
+  color: #555;
   font-weight: 500;
 }
 
@@ -59,4 +70,39 @@ nav span {
 
 .mobile-nav {
   display: none;
+}
+
+/* Banner */
+
+.banner {
+  position: relative;
+  top: 4rem;
+  padding: 2rem 1.5rem;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+}
+
+.banner .image {
+  width: 60%;
+}
+
+.banner img {
+  width: 100%;
+}
+.banner .text {
+  margin-left: 1.5rem;
+  max-width: 30%;
+}
+
+.banner .text .button {
+  width: 100%;
+  background-color: #555;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.banner .text .button span {
+  color: #fff;
+  font-weight: 500;
 }
