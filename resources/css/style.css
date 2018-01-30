@@ -139,6 +139,7 @@ nav span {
   position: relative;
   top: 4rem;
   display: flex;
+  background-color: #f9f9f9;
 }
 
 .featured {
@@ -210,4 +211,35 @@ nav span {
 
 .text a:hover {
   color: #009ed2;
+}
+
+
+/*Courses Section*/
+
+.learning {
+  position: relative;
+  top: 4rem;
+  padding: 2rem 4.5rem;
+  background: #eee;
+}
+
+.learning h2 {
+  text-align: center;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+}
+
+.course {
+  width: 30%;
+}
+
+.course.middle {
+  margin: 0 2rem;
+}
+
+.course img {
+  width: 100%;
 }
