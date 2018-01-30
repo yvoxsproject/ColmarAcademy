@@ -1,0 +1,62 @@
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 5;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+}
+
+header .logo-title {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  height: 2rem;
+}
+
+header .title {
+  font-size: 1rem;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  margin-right: 0;
+}
+
+nav a {
+  color: #000;
+  font-weight: 500;
+}
+
+nav span {
+  padding-left: 1rem;
+}
+
+.mobile-nav {
+  display: none;
+}
