@@ -232,6 +232,10 @@ nav span {
   justify-content: center;
 }
 
+.first-row {
+  margin-bottom: 2rem;
+}
+
 .course {
   width: 30%;
 }
@@ -242,4 +246,14 @@ nav span {
 
 .course img {
   width: 100%;
+}
+
+.course-details {
+  background: #fff;
+  padding: 1rem;
+}
+
+.course-details .details {
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
 }
