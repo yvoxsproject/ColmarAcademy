@@ -31,6 +31,7 @@ h3 {
 
 .left {
   width: 60%;
+  padding: 2rem 1.5rem;
 }
 
 .right {
@@ -101,9 +102,6 @@ nav span {
   align-items: center;
 }
 
-.banner .image {
-  padding: 2rem 1.5rem;
-}
 
 .banner .image img {
   width: 100%;
@@ -142,20 +140,12 @@ nav span {
   background-color: #f9f9f9;
 }
 
-.featured {
-  width: 60%;
-}
-
-.featured .image {
-  padding: 2rem 1.5rem;
-}
-
 .featured img {
   width: 100%;
 }
 
 .featured .text {
-  padding: 0rem 1.5rem 2rem 1.5rem;
+  padding-top: 2rem;
 }
 
 .featured span {
@@ -164,9 +154,11 @@ nav span {
 }
 
 .featured-info .info {
-  width: 40%;
-  padding: 1rem 0 2rem 0rem;
   border-left: 1px solid #f1f1f1;
+}
+
+.info {
+  padding: 1rem 0 2rem 0rem;
 }
 
 .info-item {
@@ -230,18 +222,13 @@ nav span {
 .courses {
   display: flex;
   justify-content: center;
-}
-
-.first-row {
-  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .course {
   width: 30%;
-}
-
-.course.middle {
-  margin: 0 2rem;
+  margin: 1rem;
+  background: #fff;
 }
 
 .course img {
@@ -249,11 +236,32 @@ nav span {
 }
 
 .course-details {
-  background: #fff;
   padding: 1rem;
 }
 
 .course-details .details {
   margin-bottom: 0.5rem;
   line-height: 1.5rem;
+}
+
+
+/*Thesis*/
+
+.thesis {
+  position: relative;
+  top: 4rem;
+  padding-top: 2rem;
+}
+
+.thesis-content {
+  display: flex;
+}
+
+.thesis h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+video {
+  width: 100%;
 }
