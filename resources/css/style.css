@@ -1,7 +1,7 @@
 html {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  color: #444;
+  color: #666;
 }
 
 h1 {
@@ -11,7 +11,7 @@ h1 {
   font-weight: 800;
   margin-bottom: 1.5rem;
   line-height: 3.2rem;
-  color: #fff;
+  color: #333;
 }
 
 h2 {
@@ -20,7 +20,7 @@ h2 {
   font-weight: 800;
   margin-bottom: 2rem;
   line-height: 3rem;
-  color: #111;
+  color: #333;
 }
 
 #featured {
@@ -33,7 +33,7 @@ h3 {
   font-weight: 800;
   line-height: 2rem;
   margin-bottom: 0.5rem;
-  color: #111;
+  color: #333;
 }
 
 .left {
@@ -42,12 +42,9 @@ h3 {
 }
 
 .right {
-  width: 40%;
+  max-width: 40%;
 }
 
-.image {
-  width: 100%;
-}
 
 /* Header */
 
@@ -129,18 +126,65 @@ nav .login a:hover {
   display: none;
 }
 
+@media only screen and (max-width: 750px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-nav a {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+   header {
+    height: 4rem;
+  }
+
+  .mobile-nav {
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .mobile-nav a img {
+    transition: opacity 150ms ease;
+  }
+
+  .mobile-nav a:hover img {
+    opacity: 0.5;
+  }
+
+  .mobile-logo {
+    display: inline-flex;;
+  }
+
+  header .logo-title {
+    display: none;
+  }
+}
+
+
 /* Banner */
 
 .banner {
   position: relative;
   top: 4rem;
-  background: linear-gradient(to top right, #fff, #777);
+  background: linear-gradient(to bottom left, #fff , #f1f1f1);
   display: flex;
   align-items: center;
 }
 
 .banner h3 {
-  color: #f1f1f1;
+  color: #111;
 }
 
 .banner .image img {
@@ -182,6 +226,73 @@ nav .login a:hover {
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .banner .left {
+    width: 40%;
+  }
+
+  .banner .right {
+    max-width: 55%;
+  }
+
+  .banner h1 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+
+  .banner h3 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .banner h1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .banner h3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .banner h1 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .banner .left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner .right {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .banner h3 {
+    display: block;
+  }
+
+  .banner .banner-text {
+    padding: 0;
+  }
+}
 
 /*Featured & Info*/
 
@@ -205,11 +316,6 @@ nav .login a:hover {
   font-weight: 500;
 }
 
-
-.featured-info .info {
-  border-left: 1px solid #f1f1f1;
-}
-
 .info {
   padding: 1rem 0 2rem 0rem;
 }
@@ -224,6 +330,10 @@ nav .login a:hover {
 .info-item:hover {
   opacity: 1;
   box-shadow: 5px 5px 10px;
+}
+
+.info-item .text {
+  width: 65%;
 }
 
 .guest {
@@ -241,8 +351,12 @@ nav .login a:hover {
 }
 
 .info .image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+img.mobile {
+  display: none;
 }
 
 .info-item:hover .overlay i {
@@ -269,7 +383,6 @@ nav .login a:hover {
 
 .info-item .text {
   padding: 0.5rem;
-  width: 65%;
 }
 
 .text .details {
@@ -294,17 +407,130 @@ nav .login a:hover {
   color: #09e1c0;
 }
 
+@media only screen and (max-width: 900px) {
+  .featured-info .featured-left {
+    max-width: 40%;
+  }
+
+  .featured-info .featured.left img {
+    display: none;
+  }
+
+  .featured-info .info.right {
+    max-width: 60%;
+  }
+
+  .featured.left .details {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .featured.left .details {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h2#featured {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .featured-info .featured.left {
+    display: none;
+  }
+
+  .info.right {
+    max-width: 100%;
+  }
+
+  .info-item {
+    opacity: 1;
+  }
+
+  .info-item .overlay {
+    display: none;
+  }
+
+  .info-item .image {
+    width: 20%;
+  }
+
+  .info-item:hover {
+    box-shadow: 0 0;
+  }
+
+  .guest {
+    background-color: #fff;
+    color: #666;
+  }
+
+  .guest h3 {
+    color: #333;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .info {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .info-item {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .info-item.our-campus, .info-item.guest {
+    padding-top: 4rem;
+  }
+
+  .info .image {
+    width: 100%;
+    padding: 0;
+  }
+
+  img.desktop {
+    display: none;
+  }
+
+  img.mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .info-item .text {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: auto;
+  }
+}
+
+
 /*Courses Section*/
 
 .learning {
   position: relative;
   top: 4rem;
   padding: 2rem 4.5rem;
-  background: #eee;
+  background-color: #f9f9f9;
 }
 
 .learning h2 {
   text-align: center;
+  color: #7272ff;
+}
+
+.courses h3 {
+  color: #7272ff;
+}
+
+.courses a {
+  color: #666;
 }
 
 .courses {
@@ -317,6 +543,12 @@ nav .login a:hover {
   width: 30%;
   margin: 1rem;
   background: #fff;
+  box-shadow: 5px 5px 15px #999;
+  transition: all 300ms ease-in 150ms;
+}
+
+.course:hover {
+  box-shadow: 0 0;
 }
 
 .course img {
@@ -330,6 +562,78 @@ nav .login a:hover {
 .course-details .details {
   margin-bottom: 0.5rem;
   line-height: 1.5rem;
+}
+
+@media only screen and (max-width: 1120px) {
+  .course {
+    width: 43%;
+  }
+
+  .course:hover {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .course img {
+    display: none;
+  }
+
+  .course p {
+    font-size: 0.9rem;
+  }
+
+  .course:hover {
+    width: 43%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .learning {
+    padding: 2rem 1rem;
+    background: #f1f1f1;
+  }
+
+  .learning h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .courses {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .course {
+    width: auto;
+    margin: 0.5rem 0 0 0;
+    box-shadow: 0 0;
+    transition: all 200ms ease-in 100ms;
+  }
+
+  .course:hover {
+    width: auto;
+    background-color: #09e1c0;
+    box-shadow: 5px 5px 10px #666;
+    border-radius: 2rem;
+  }
+
+  .course:hover h3 {
+    color: #fff;
+  }
+
+  .course p {
+    display: none;
+  }
+
+  .course h3 {
+    color: #666;
+    margin-bottom: 0;
+    transition: all 200ms ease-in 100ms;
+  }
+
+  .course-details {
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
 }
 
 
@@ -354,6 +658,23 @@ video {
   width: 100%;
 }
 
+.thesis .text a:hover {
+  letter-spacing: 2px;
+  color: #09e1c0;
+}
+
+@media only screen and (max-width: 900px) {
+  .thesis .featured.left {
+    width: auto;
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  .thesis .info.right, .thesis .left .text {
+    display: none;
+  }
+}
+
+
 /*Footer*/
 
 footer {
@@ -362,8 +683,19 @@ footer {
   padding: 1rem 1.5rem 5rem 1.5rem;
   display: flex;
   justify-content: space-between;
+  background-color: #f9f9f9;
 }
 
 footer p, footer span {
   font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  footer {
+    padding: 1rem;
+  }
+
+  footer nav {
+    display: none;
+  }
 }
