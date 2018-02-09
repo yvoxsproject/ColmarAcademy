@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Colmar Academy</title>
     <link href="./resources/images/favicon-colmar.ico" type="image/x-icon" rel="icon">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800|Archivo+Black|Montserrat:300,400,500,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800|Archivo+Black" rel="stylesheet">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
@@ -15,15 +15,15 @@
     <header>
     <div class="content">
       <div class="logo-title">
-        <div class="logo">
+        <div aria-label="Colmar Academy logo" class="logo">
           <a href="#"><img src="./resources/images/ic-logo.svg"/></a>
         </div>
-        <div class="title">
+        <div role="presentation" class="title">
           <a href="#"><span class="colmar">COLMAR</span>ACADEMY</a>
         </div>
       </div>
       <nav class="desktop-nav">
-        <ul>
+        <ul role="presentation">
           <span><a href="#">On campus</a></span>
           <span><a href="#">Online</a></span>
           <span><a href="#">For companies</a></span>
@@ -40,17 +40,17 @@
     </header>
 
     <!--Banner Section-->
-    <div class="banner">
+    <div aria-label="Welcome to Colmar Academy" class="banner">
       <div class="left">
         <div class="image">
-          <img src="./resources/images/banner.jpg"/>
+          <img src="./resources/images/banner.jpg" alt="Image of Colmar Academy students reading and studying"/>
         </div>
       </div>
       <div class="right">
-        <div class="banner-text">
+        <div role="presentation" class="banner-text">
           <h1>Learn something new everyday</h1>
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-          <div class="button">
+          <div role="button" class="button">
             <a href="#">Start here</a>
             <a href="#"><i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -60,21 +60,21 @@
 
     <!--Featured Info Section-->
     <div class="featured-info">
-      <div class="featured left">
+      <div aria-label="Featured image and quote" class="featured left">
         <div class="image">
-          <img src="./resources/images/information-main.jpg"/>
+          <img src="./resources/images/information-main.jpg" alt="Image of Colmar Academy student reading a book in the park"/>
         </div>
         <div class="text">
           <h2 id="featured">It doesn't hurt to keep practicing</h2>
-          <p class="details">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-          <span class="small-text">Emanuel, Sr Strategist at Hiring.com</span>
+          <p aria-label="A quote from a former student, pictured" class="details">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          <span aria-label="Quote by" class="small-text">Emanuel, Sr Strategist at Hiring.com</span>
         </div>
       </div>
-      <div class="info right">
-        <div class="info-item orientation">
+      <div aria-label="Information about Colmar Academy and upcoming events" class="info right">
+        <div class="info-item">
           <div class="image">
-            <img src="./resources/images/information-orientation.jpg" class="desktop"/>
-            <img src="./resources/images/information-orientation-mobile.jpg" class="mobile"/>
+            <img src="./resources/images/information-orientation.jpg" class="desktop" alt="Image of students walking on campus"/>
+            <img src="./resources/images/information-orientation-mobile.jpg" class="mobile" alt="Image of students walking on campus"/>
           </div>
           <div class="text">
             <h3>Orientation date</h3>
@@ -84,8 +84,8 @@
         </div>
         <div class="info-item our-campus">
           <div class="image">
-            <img src="./resources/images/information-campus.jpg" class="desktop"/>
-            <img src="./resources/images/information-campus-mobile.jpg" class="mobile"/>
+            <img src="./resources/images/information-campus.jpg" class="desktop" alt="Image of students in the library"/>
+            <img src="./resources/images/information-campus-mobile.jpg" class="mobile" alt="Image of students in the library"/>
           </div>
           <div class="text">
             <h3>Our campus</h3>
@@ -95,8 +95,8 @@
         </div>
         <div class="info-item guest">
           <div class="image">
-            <img src="./resources/images/information-guest-lecture.jpg" class="desktop"/>
-            <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mobile"/>
+            <img src="./resources/images/information-guest-lecture.jpg" class="desktop" alt="Image of the guest lecturer Oliver Sack"/>
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mobile" alt="Image of the guest lecturer Oliver Sack"/>
           </div>
           <div class="text">
             <h3>Our guest lecturer</h3>
@@ -108,12 +108,12 @@
     </div>
 
     <!--Course Section-->
-    <div class="learning">
+    <div aria-label="List of courses available at Colmar Academy" class="learning">
       <h2>Start learning</h2>
       <div class="courses">
         <div class="course">
           <a href="#">
-            <img src="./resources/images/course-software.jpg"/>
+            <img src="./resources/images/course-software.jpg" alt=""/>
           </a>
           <div class="course-details">
             <a href="#">
@@ -125,7 +125,7 @@
         </div>
         <div class="course">
           <a href="#">
-            <img src="./resources/images/course-computer-art.jpg"/>
+            <img src="./resources/images/course-computer-art.jpg" alt=""/>
           </a>
           <div class="course-details">
             <a href="#">
@@ -137,7 +137,7 @@
         </div>
         <div class="course">
           <a href="#">
-            <img src="./resources/images/course-design.jpg"/>
+            <img src="./resources/images/course-design.jpg" alt=""/>
           </a>
           <div class="course-details">
             <a href="#">
@@ -149,7 +149,7 @@
         </div>
         <div class="course">
           <a href="#">
-            <img src="./resources/images/course-data.jpg"/>
+            <img src="./resources/images/course-data.jpg" alt=""/>
           </a>
           <div class="course-details">
             <a href="#">
@@ -161,7 +161,7 @@
         </div>
         <div class="course">
           <a href="#">
-            <img src="./resources/images/course-business.jpg"/>
+            <img src="./resources/images/course-business.jpg" alt=""/>
           </a>
           <div class="course-details">
             <a href="#">
@@ -173,7 +173,7 @@
         </div>
         <div class="course">
           <a href="#">
-            <img src="./resources/images/course-marketing.jpg"/>
+            <img src="./resources/images/course-marketing.jpg" alt=""/>
           </a>
           <div class="course-details">
             <a href="#">
@@ -187,22 +187,22 @@
     </div>
 
     <!--Thesis Section-->
-    <div class="thesis">
+    <div aria-label="Featured thesis" class="thesis">
       <h2>Thesis exhibit</h2>
       <div class="thesis-content">
-      <div class="featured left">
+      <div aria-label="Featured video thesis" class="featured left">
         <div class="image">
           <video controls src="./resources/videos/thesis.mp4"/>
         </div>
         <div class="text">
           <h3>Reimagine urban</h3>
-          <p class="details">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commondo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          <p class="details">This 22-second silent video shows a standalone building with scattered windows of different sizes. The fast-forwarded simulation of day to night shows how the building's shadows change their shape and length depending on daylight. Such details are obvious yet often-forgotten real life considerations in graphic design.</p>
         </div>
       </div>
       <div class="info right">
         <div class="info-item">
           <div class="image">
-            <img src="./resources/images/thesis-fisma.jpg"/>
+            <img src="./resources/images/thesis-fisma.jpg" alt="Image of design project in progress"/>
           </div>
           <div class="text">
             <a href="#"><h3>Fisma: Design and Prototype</h3></a>
@@ -211,7 +211,7 @@
         </div>
         <div class="info-item">
           <div class="image">
-            <img src="./resources/images/thesis-now-and-then.jpg"/>
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="Image of New York skyline"/>
           </div>
           <div class="text">
             <a href="#"><h3>Now and then</h3></a>
