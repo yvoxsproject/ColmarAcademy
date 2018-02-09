@@ -23,7 +23,7 @@ h2 {
   color: #333;
 }
 
-#featured {
+h2#featured {
   margin-bottom: 1.5rem;
 }
 
@@ -38,11 +38,10 @@ h3 {
 
 .left {
   width: 60%;
-  padding: 2rem 1.5rem;
 }
 
 .right {
-  max-width: 40%;
+  width: 40%;
 }
 
 
@@ -165,7 +164,7 @@ nav .login a:hover {
   }
 
   .mobile-logo {
-    display: inline-flex;;
+    display: inline-flex;
   }
 
   header .logo-title {
@@ -184,10 +183,13 @@ nav .login a:hover {
   align-items: center;
 }
 
+.banner .image {
+  padding: 2rem 1.5rem;
+}
+
 .banner .image img {
   width: 100%;
   display: block;
-  backface-visibility: hidden;
 }
 
 .banner .banner-text {
@@ -211,6 +213,7 @@ nav .login a:hover {
 
 .button i {
   display: none;
+  transition: all 500ms ease;
 }
 
 .banner .banner-text .button:hover i {
@@ -229,7 +232,11 @@ nav .login a:hover {
   }
 
   .banner .right {
-    max-width: 55%;
+    width: 60%;
+  }
+
+  .banner-text {
+    padding-left: 1rem;
   }
 
   .banner h1 {
@@ -254,14 +261,7 @@ nav .login a:hover {
   }
 }
 
-@media only screen and (max-width: 620px) {
-  .banner h1 {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-  }
-}
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
   .banner {
     flex-direction: column;
     align-items: baseline;
@@ -269,12 +269,15 @@ nav .login a:hover {
 
   .banner .left {
     width: 100%;
+  }
+
+  .banner .image {
     padding: 0;
   }
 
   .banner .right {
-    max-width: 100%;
-    padding: 2rem 1rem;
+    width: 100%;
+    padding: 0;
   }
 
   .banner h1 {
@@ -287,7 +290,7 @@ nav .login a:hover {
   }
 
   .banner .banner-text {
-    padding: 0;
+    padding: 2rem 1rem;
   }
 }
 
@@ -298,6 +301,10 @@ nav .login a:hover {
   top: 4rem;
   display: flex;
   background-color: #fff;
+}
+
+.featured .image-text {
+  padding: 2rem 1.5rem;
 }
 
 .featured img {
@@ -317,11 +324,6 @@ nav .login a:hover {
   padding: 1rem 0 2rem 0rem;
 }
 
-.featured-info .right {
-  display: flex;
-  flex-direction: column;
-}
-
 .info-item {
   display: flex;
   align-items: center;
@@ -334,21 +336,12 @@ nav .login a:hover {
   box-shadow: 5px 5px 10px;
 }
 
-.info-item .text {
-  width: 65%;
-  padding: 0.5rem;
-}
-
 .guest {
   background-color: #7272ff;
   color: #fff;
 }
 
 .guest h3 {
-  color: #fff;
-}
-
-.guest .text a {
   color: #fff;
 }
 
@@ -369,6 +362,11 @@ nav .login a:hover {
   display: none;
 }
 
+.info-item .text {
+  width: 65%;
+  padding: 0.5rem;
+}
+
 .text .details {
   font-size: 0.9rem;
   line-height: 1.5rem;
@@ -382,26 +380,34 @@ nav .login a:hover {
   transition: all 200ms linear 100ms;
 }
 
-.guest .text a:hover {
-  color: #fff;
-}
-
 .featured-info .text a:hover {
   letter-spacing: 4px;
   color: #09e1c0;
 }
 
+.guest .text a {
+  color: #fff;
+}
+
+.guest .text a:hover {
+  color: #fff;
+}
+
 @media only screen and (max-width: 900px) {
-  .featured-info .featured-left {
-    max-width: 40%;
+  .featured-info .featured.left {
+    width: 40%;
   }
 
   .featured-info .featured.left img {
     display: none;
   }
 
+  .featured .text {
+    padding: 0;
+  }
+
   .info.right {
-    max-width: 60%;
+    width: 60%;
   }
 
   .featured.left .details {
@@ -430,7 +436,7 @@ nav .login a:hover {
   }
 
   .info.right {
-    max-width: 100%;
+    width: 100%;
   }
 
   .info-item {
@@ -656,8 +662,11 @@ video {
 }
 
 @media only screen and (max-width: 900px) {
-  .thesis .featured.left {
-    width: auto;
+  .thesis .left {
+    width: 100%;
+  }
+
+  .thesis .image-text {
     padding: 1rem 0 1.5rem 0;
   }
 
