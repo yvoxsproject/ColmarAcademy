@@ -36,6 +36,11 @@ h3 {
   color: #333;
 }
 
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .left {
   width: 60%;
 }
@@ -179,6 +184,11 @@ nav .login a:hover {
   position: relative;
   top: 4rem;
   background: linear-gradient(to bottom left, #fff , #f1f1f1);
+}
+
+.banner.container {
+  position: relative;
+  top: 0;
   display: flex;
   align-items: center;
 }
@@ -296,12 +306,13 @@ nav .login a:hover {
 
 /*Featured & Info*/
 
-.featured-info {
+.featured-info.container {
   position: relative;
   top: 4rem;
   display: flex;
   background-color: #fff;
 }
+
 
 .featured .image-text {
   padding: 2rem 1.5rem;
@@ -510,8 +521,14 @@ nav .login a:hover {
 .learning {
   position: relative;
   top: 4rem;
-  padding: 2rem 4.5rem;
   background-color: #f9f9f9;
+}
+
+.learning.container {
+  position: relative;
+  top: 0;
+  padding: 2rem 4.5rem;
+
 }
 
 .learning h2 {
@@ -586,6 +603,10 @@ nav .login a:hover {
   .learning {
     padding: 2rem 1rem;
     background: #f1f1f1;
+  }
+
+  .learning.container {
+    padding: 0;
   }
 
   .learning h2 {
@@ -681,10 +702,13 @@ video {
 footer {
   position: relative;
   top: 4rem;
-  padding: 1rem 1.5rem 5rem 1.5rem;
+  background-color: #f9f9f9;
+}
+
+footer .container {
   display: flex;
   justify-content: space-between;
-  background-color: #f9f9f9;
+  padding: 1rem 1.5rem 5rem 1.5rem;
 }
 
 footer p, footer span {
